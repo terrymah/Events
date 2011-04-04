@@ -1,3 +1,7 @@
+#Events
+
+*by Terry Mahaffey*
+
 Events is a functional based event system - an alternative to the classical OO Observer pattern. Let's say you have a class, Foo. You can add an event like this
 
     class Foo
@@ -33,8 +37,11 @@ Events can also take parameters. There are different sets of objects for the var
 
 When you register for this event, you have to provide a functor which takes the appropriate arguements. When you fire the event, you have to provide the arguements.
 
-One last note; taking from C#, operator+= and operator-= have been overridden to basically alias Register and Unregister. So the following syntax is possible, if you prefer:
+Taking from C#, operator+= and operator-= have been overridden to basically alias Register and Unregister. So the following syntax is possible, if you prefer:
 
+    Foo f;
     f.Changed += []() {
         std::cout << "Foo Changed!\n";
     });
+
+This software is made available under the Boost license.
