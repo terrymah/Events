@@ -1,7 +1,7 @@
 #include "events.h"
 #include <iostream>
 
-using namespace mahaffey::events;
+using namespace tjm::events;
 
 class Test
 {

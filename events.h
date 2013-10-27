@@ -9,7 +9,7 @@
 #endif
 #include <algorithm>
 
-namespace mahaffey {
+namespace tjm {
 namespace events {
 
 #ifdef __GNUC__
